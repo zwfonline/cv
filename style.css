@@ -93,6 +93,87 @@ nav {
     height: 40px !important; 
 }
 
+/* Projects Section */
+.projects {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Project Card Styles */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    position: relative; /* 为了定位按钮 */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease; /* 添加图片淡入淡出效果 */
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Hover Effect for Project Cards */
+.project-card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.1); /* 卡片变灰 */
+}
+
+.project-card:hover img {
+    opacity: 0.5; /* 图片变透明以显示灰色效果 */
+}
+
+/* View Project Button */
+.view-project-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    display: none; /* 默认隐藏 */
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover .view-project-button {
+    display: block; /* 悬停时显示按钮 */
+}
+
+.view-project-button:hover {
+    background-color: #1abc9c;
+}
+
 .education-card h2 {
     margin-top: 0;
     color: #2980b9;
@@ -269,6 +350,68 @@ nav a, button {
     line-height: 1.9;
 }
 
+/* Skills Section */
+.skills {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.skills h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fields Section */
+.fields {
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.fields h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.fields-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 每行最多三个 */
+    gap: 20px;
+
+}
+
+.field-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.field-item img {
+    width: 80px; /* 图标大小 */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.field-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
 /* Footer Section */
 footer {
     background-color: #34495e;
@@ -300,9 +443,216 @@ footer .social-links a:hover {
     color: #1abc9c;
 }
 
-.education img{ height: 100px;
+.education img{ height: 50px;
 }
 
+/* Referee Section */
+.referee {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.referee h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.referee-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.referee-info {
+    flex: 1;
+    text-align: left;
+}
+
+.referee-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+.referee-info p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #1abc9c;
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.contact-info a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Personal Life Section */
+.personal-life {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.personal-life h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #2980b9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item.left:before {
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 4px solid #2980b9;
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.right:before {
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 4px solid #2980b9;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Referee Photo */
+.referee-photo img {
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .social-links a:hover {
+    color: #1abc9c;
+}
+.hamburger-menu {
+    display:none; /* 显示汉堡菜单 */
+}
 
 @media (max-width: 821px) {
     .banner {
@@ -353,14 +703,83 @@ footer .social-links a:hover {
         font-size: 1.2em;
     }
 
+    nav {
+        background-color: #2980b9;
+        padding: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: block; /* 显示汉堡菜单 */
+    }
+
+    .nav-list {
+        display: none; /* 隐藏默认导航列表 */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #3498db;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-list.show {
+        display: flex; /* 显示导航列表 */
+    }
+
+    .nav-list li {
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2980b9;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
     nav ul li {
+        width: 100%; /* 使按钮宽度充满屏幕 */
+    }
+
+    nav ul li a {
         display: block;
-        margin: 10px 0;
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em; /* 增大字体以适应屏幕 */
+        padding: 15px 0;
+        background-color: #3498db;
+        border-bottom: 1px solid #2980b9;
+        transition: background-color 0.3s ease;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #1abc9c; /* 悬停时的背景色 */
+    }
+
+    /* 在小屏幕上为每个链接之间增加适当的间距 */
+    nav ul li {
+        margin: 5px 0;
     }
     .timeline-item {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
+    }
+    .projects {
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 5px;
+        text-align: center;
     }
 
     .education-card {
@@ -380,8 +799,38 @@ footer .social-links a:hover {
     .timeline:before {
         left: 10px;
     }
+    .project-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .skills h1, .fields h1 {
+        font-size: 2em;
+    }
+
+    .fields ul {
+        font-size: 1em;
+    }
 
     .timeline-content {
         margin-left: 30px;
     }
+
+    .referee h1 {
+        font-size: 2em;
+    }
+
+    .referee-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .referee-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .referee-photo img {
+        margin: 0 auto;
+    }
+    
 }

@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weifeng Zhou's Resume</title>
+    <link rel="icon" class="titleLogo"href="https://cdn-icons-png.flaticon.com/512/8101/8101319.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="projects.html">Skills & Field </a></li>
-            <li><a href="referee.html">Referee</a></li>
-            <li><a href="personal-life.html">Personal Life</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; <!-- Unicode for hamburger icon -->
+            </div>
+            <ul id="nav-list" class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills & Fields</a></li>
+                <li><a href="referee.html">Referee</a></li>
+                <li><a href="personal-life.html">Personal Life</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Banner Section -->
     <header class="banner">
-        <img src="https://i.postimg.cc/GhHG6WTv/Screenshot-2024-08-16-161743.jpg" alt="Joe's Photo">
+        <img src="https://media.licdn.com/dms/image/C5603AQE62fV80zSrWA/profile-displayphoto-shrink_800_800/0/1622558677004?e=1729123200&v=beta&t=rBIDkvNAuWjpXLPxaetzOGkNB-z9H8XEMLDQxkMb6HA" alt="Joe's Photo">
         <h1>Weifeng Zhou (Joe)</h1>
         <h2>Data Analyst | Business Analyst | Front-End Developer</h2>
         <div class="social-media">
             <div class="sociaoIcon">
-              <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <a href="https://www.facebook.com/profile.php?id=100009113345433" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                   </path>
               </svg></a>
-              <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://www.instagram.com/zwfonline/" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
                   </path>
               </svg></a>
@@ -39,64 +45,66 @@
                   <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
                   </path>
               </svg></a>
-              <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://www.linkedin.com/in/weifeng-zhou-2824bb1b9" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
                   </path>
               </svg></a>
             </div>
         </div>
+        
+          
     </header>
 
     <section class="education">
         <h1>Education Background</h1>
         <div class="education-card">
             <h2>The University of South Australia</h2>
-            <img src="https://i.postimg.cc/PxdDX4dj/Unisa-removebg-preview.png">
+            <img src="https://courseseeker.edu.au/assets/images/institutions/3027.png">
             <div></div>
             <span class="date">July 2023 - May 2025</span>
             <p>Master of Information Technology</p>
             <p>Adelaide, South Australia</p>
             <button class="map-button" onclick="openMap('University of South Australia, Adelaide, South Australia')">
-                <img src="https://i.postimg.cc/L6GNHrwF/imgbin-location-map-button-computer-icons-map-LLhzja-F7z4-KN1s1h-ZWUcdu-Lp-A-removebg-preview.png" alt="Map Icon">
+                <img src="https://i.pinimg.com/originals/87/ee/a5/87eea5f5db0b138dc45dfb403570df6f.png" alt="Map Icon">
             </button>
         </div>
 
         <div class="education-card">
             <h2>The University of Queensland</h2>
-            <img src="https://i.postimg.cc/15XpVJwR/UQ-removebg-preview.png">
+            <img src="https://courseseeker.edu.au/assets/images/institutions/3019.png">
             <div></div>
             <span class="date">Dec 2019 - Jan 2021</span>
             <p>Master of Business (Supply Chain & Advertising)</p>
             <p>Brisbane, Queensland</p>
             <p>GPA: 5.5/7</p>
             <button class="map-button" onclick="openMap('University of Queensland, Brisbane, Queensland')">
-                <img src="https://i.postimg.cc/L6GNHrwF/imgbin-location-map-button-computer-icons-map-LLhzja-F7z4-KN1s1h-ZWUcdu-Lp-A-removebg-preview.png" alt="Map Icon">
+                <img src="https://i.pinimg.com/originals/87/ee/a5/87eea5f5db0b138dc45dfb403570df6f.png" alt="Map Icon">
             </button>
         </div>
 
         <div class="education-card">
             <h2>Massachusetts Institute of Technology X on EDX</h2>
-            <img src="https://i.postimg.cc/90MqTQ4g/mitx-removebg-preview.png">
+            <img src="https://1000logos.net/wp-content/uploads/2022/08/MIT-Logo.png">
             <div></div>
             <span class="date">July 2019 - Mar 2020</span>
             <p>MicroMaster of Supply Chain Management</p>
             <p>Online</p>
             <p>GPA: 77/100</p>
             <button class="map-button" onclick="openMap('MIT,Bonston')">
-                <img src="https://i.postimg.cc/L6GNHrwF/imgbin-location-map-button-computer-icons-map-LLhzja-F7z4-KN1s1h-ZWUcdu-Lp-A-removebg-preview.png" alt="Map Icon">
+                <img src="https://i.pinimg.com/originals/87/ee/a5/87eea5f5db0b138dc45dfb403570df6f.png" alt="Map Icon">
             </button>
         </div>
 
         <div class="education-card">
             <h2>SEGi University</h2>
-            <img src="https://i.postimg.cc/6qm4hxnW/segi-removebg-preview.png">
+            <img src="https://www.pngkit.com/png/full/609-6094427_education-providers-malaysia-financial-planning-council-segi-university.png">
             <div></div>
             <span class="date">May 2016 - June 2019</span>
             <p>Bachelor of Business Management (Marketing)</p>
             <p>Kuala Lumpur, Malaysia</p>
             <p>GPA: 3/4</p>
             <button class="map-button" onclick="openMap('SEGi University')">
-                <img src="https://i.postimg.cc/L6GNHrwF/imgbin-location-map-button-computer-icons-map-LLhzja-F7z4-KN1s1h-ZWUcdu-Lp-A-removebg-preview.png" alt="Map Icon">
+                <img src="https://i.pinimg.com/originals/87/ee/a5/87eea5f5db0b138dc45dfb403570df6f.png" alt="Map Icon">
             </button>
         </div>
     </section>
