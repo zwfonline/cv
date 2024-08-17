@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2980b9;
+    padding: 15px;
+    text-align: center;
+}
+/* Leave a Message Section */
+.leave-message {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 110px;
+}
+.experience {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.experience h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #2980b9;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #3498db;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.education {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.education h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #2980b9;
+}
+
+.education-card {
+    position: relative;
+    padding: 20px;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.map-button {
+    position: absolute;
+    right: 20px;  /* 设置为右边距 */
+    bottom: 20px; /* 设置为底边距 */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.map-button img {
+    height: 40px !important; 
+}
+
+.education-card h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.education-card .date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.education-card p {
+    margin: 5px 0;
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.timeline-item img{
+    height: 60px; 
+    
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.timeline-content .date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.timeline-content p {
+    margin-top: 10px;
+    color: black;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 0;
+}
+.leave-message h3 {
+    margin-top: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+nav a, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+/* Banner Section */
+.banner {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+}
+
+.banner h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* About Me Section */
+.about-me {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.about-me h3 {
+    margin-top: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.about-me p {
+    margin: 14px 0;
+    line-height: 1.9;
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+.social-media .sociaoIcon a svg {
+    width: 24px;
+    height: 24px; color: white; margin-left: 20px; margin-top: 10px;
+}
+.sociaoIcon{height: 50px; }
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .social-links a:hover {
+    color: #1abc9c;
+}
+
+.education img{ height: 100px;
+}
+
+
+@media (max-width: 821px) {
+    .banner {
+        padding: 30px 10px;
+    }
+
+
+    .banner img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner h2 {
+        font-size: 1.2em;
+    }
+
+    .about-me {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    
+    footer {
+        padding: 15px 0;
+    }
+
+    footer .social-links a {
+        font-size: 1.2em;
+    }
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .map-button img {
+        height: 20px !important; 
+    }
+
+    .banner h2 {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .education-card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content, .timeline-item:nth-child(even) .timeline-content {
+        left: 0;
+        transform: none;
+    }
+
+    .timeline:before {
+        left: 10px;
+    }
+
+    .timeline-content {
+        margin-left: 30px;
+    }
+}
