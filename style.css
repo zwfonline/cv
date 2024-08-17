@@ -710,6 +710,7 @@ footer .social-links a:hover {
 
     .hamburger-menu {
         display: block; /* 显示汉堡菜单 */
+        height: 30px;
     }
 
     .nav-list {
