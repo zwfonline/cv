@@ -11,6 +11,8 @@ nav {
     padding: 15px;
     text-align: center;
 }
+
+
 /* Leave a Message Section */
 .leave-message {
     max-width: 800px;
@@ -311,7 +313,7 @@ nav a, button {
 }
 
 .banner img {
-    width: 200px;
+    width: 250px;
     height: 200px;
     border-radius: 100%;
     margin-bottom: 20px;
@@ -688,6 +690,10 @@ footer .social-links a:hover {
         font-size: 1.2em;
     }
 }
+
+
+
+
 /* Responsive Design */
 @media (max-width: 600px) {
     
@@ -804,7 +810,7 @@ footer .social-links a:hover {
         left: 10px;
     }
     .project-card {
-        width: 90%;
+        width: 90% ;
         margin-bottom: 20px;
     }
     .skills h1, .fields h1 {

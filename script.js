@@ -1,3 +1,5 @@
+
+ 
  // 添加页面滚动时的动画效果
  document.addEventListener("scroll", function() {
     var sections = document.querySelectorAll(".section, .footer");
@@ -91,4 +93,7 @@ function toggleMenu() {
     var navList = document.getElementById("nav-list");
     navList.classList.toggle("show");
 }
+
+
+
 
